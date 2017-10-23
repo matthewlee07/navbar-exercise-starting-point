@@ -17,7 +17,7 @@ body {
     padding: 10px 10px;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right:10px;
 }
 
 .hamburger-stripe {
@@ -25,22 +25,59 @@ body {
     height: 3px;
     margin-bottom: 5px;
 }
+/* 
+ul, li {
+    margin-left: 0;
+    margin-right:0;
+} */
+
+nav {
+    display: block;
+    margin: 0px;
+}
+
+ul{
+    list-style-type: none;
+    /* margin: 0 auto; */
+    padding: 0;
+}
+
 
 /* Add your CSS here */
-
-
-.container {
-    display: flex;
-    flex-direction: row;
-}
-
-.topNav {
-    display:flex;
-    flex-direction: row;
-}
-
+/* runs if condition is true */
 @media (min-width: 576px) {
-    .hamburger {
-       display: none;
+    .hamburger{
+        display:none;
     }
 }
+
+@media (max-width: 767px){
+    img{
+        display: none;
+    }
+}
+
+.outerMenu{
+    text-transform: uppercase;
+    padding: 20px 20px;
+    font-size: 24px;
+    color: rgb(130, 153, 255);
+    border-bottom: 1px solid grey;
+}
+
+.outerMenu a {
+    text-decoration: none;
+    color: rgb(130, 153, 255);
+}
+
+
+.innerMenu a{
+    color: black;
+    display: block;
+    margin-left: 0px;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+
+
