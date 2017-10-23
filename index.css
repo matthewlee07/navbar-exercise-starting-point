@@ -45,18 +45,6 @@ ul{
 
 /* Add your CSS here */
 /* runs if condition is true */
-@media (min-width: 576px) {
-    .hamburger{
-        display:none;
-    }
-}
-
-@media (max-width: 767px){
-    img{
-        display: none;
-    }
-}
-
 .outerMenu{
     text-transform: uppercase;
     padding: 20px 20px;
@@ -78,6 +66,46 @@ ul{
     text-align: left;
     padding: 10px 0px;
 }
+
+@media (min-width: 576px) {
+    .hamburger{
+        display:none;
+    }
+}
+
+@media (max-width: 767px){
+    img{
+        display: none;
+    }
+}
+
+@media (min-width:992px){
+    img{
+        display: none;
+    }
+
+    .topNav{
+        display:flex;
+        flex-direction: row;
+    }
+    .rowMaker{
+        display: flex;
+        justify-content: space-around;
+    }
+    .outerMenu{
+        border-bottom: none;
+    }
+    
+    .innerMenu{
+        display: none;
+    }
+    
+    #signIn{
+        float:right;
+    }
+}
+
+
 
 
 
